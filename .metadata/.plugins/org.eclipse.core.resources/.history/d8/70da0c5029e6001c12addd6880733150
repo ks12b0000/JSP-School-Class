@@ -1,0 +1,27 @@
+package kr.co.ezenac.model1.board;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.ServletContext;
+
+import kr.co.ezenac.model1.common.JDBConnection;
+
+public class BoardDAO extends JDBConnection {
+	
+	public BoardDAO(ServletContext application) {
+		super(application);
+	}
+	
+	//게시글 목록
+	public List<BoardDTO> selectList(Map<String, Object> map) {
+		List<BoardDTO> bbs = new ArrayList<>();		//게시물 목록을 담을 변수
+		
+		String query = "SELECT * FROM BOARD";
+		
+		
+		
+		return bbs;
+	}
+}

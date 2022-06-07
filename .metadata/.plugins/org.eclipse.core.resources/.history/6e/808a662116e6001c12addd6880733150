@@ -1,0 +1,12 @@
+package kr.co.ezenac.model1.board;
+
+import javax.servlet.ServletContext;
+
+import kr.co.ezenac.model1.common.JDBConnection;
+
+public class BoardDAO extends JDBConnection {
+	
+	public BoardDAO(ServletContext application) {
+		super(application);
+	}
+}

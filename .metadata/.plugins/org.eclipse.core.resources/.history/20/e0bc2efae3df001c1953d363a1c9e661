@@ -1,0 +1,5 @@
+package kr.co.ezenac.cookie;
+
+public class GetCookieValue {
+
+}

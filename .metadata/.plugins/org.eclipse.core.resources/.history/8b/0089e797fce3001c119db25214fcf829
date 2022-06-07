@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>쪽지쓰기</title>
+	<link rel="stylesheet" href="loginWrite.css" />	
+</head>
+<body>
+	<h2>쪽지보내기</h2>
+	<div class="menu1">
+		<ul>
+			<li><a href="#" id="a1">받은쪽지</a></li>
+			<li><a href="#">보낸쪽지</a></li>
+			<li><a href="#">쪽지쓰기</a></li>
+		</ul>
+	</div>
+	<h2>쪽지쓰기</h2>
+	<table class="Profile3">
+		<tr>
+			<th id="id12"><strong>받는 회원아이디</strong></th>
+			<td><input type="text" /><br/><p>여러회원에게 보낼때는 컴마(,)로 구분하세요.</p></td>			
+		</tr>		
+	</table>
+	<table class="Profile4">
+		<tr>
+			<th id="id13"><strong>내용</strong></th>
+			<td><input type="text" /></td>
+		</tr>
+	</table>
+	<div class="button2">
+		<a href="myPage.html"><input id="close2" type="button" value="창닫기" /></a><br/>
+		<a href="myPage.html"><input id="close2" type="button" value="창닫기" /></a><br/>	
+	</div>
+</body>
+</html>
