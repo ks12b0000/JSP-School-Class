@@ -1,9 +1,0 @@
-package kr.co.ezenac.cookie;
-
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-
-@WebServlet("/get")
-public class GetCookieValue extends HttpServlet {
-
-}
