@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		function googleOpen() {
+			window.open("https://www.google.com/","", "width=340, height=420")
+		}
+		function androidOpen() {
+			window.open("https://www.android.com/","", "width=340, height=420")
+		}
+		function appleOpen() {
+			window.open("https://www.apple.com/","", "width=340, height=420")
+		}
+	</script>
+</head>
+<body>
+	<div style="border: 1px solid black">
+		원하는 사이트를 선택하세요<br/>
+		<input type="radio" onclick="googleOpen()"/>구글<br/>
+		<input type="radio" onclick="androidOpen()" />안드로이드<br/>
+		<input type="radio" onclick="appleOpen()" />애플
+	</div>
+</body>
+</html>

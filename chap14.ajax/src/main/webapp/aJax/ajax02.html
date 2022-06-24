@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ajax 테스트</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		function fnProcess() {
+			$.ajax({
+				type: "post",
+				url: "http://localhost:8080/chap14.ajax/ajaxLab02",
+				dataType: "xml",				/* 데이터를 XML 형태로 받음 */
+				success: function(info, textStatis) {
+					$(info).find("book").each(function() {
+						/* 전송된 XML 데이터에서 엘리먼트 이름으로 데이터를 가져옴 */
+						let title = $(this).find("title").text();
+						let writer = $(this).find("writer").text();
+						let image = $(this).find("image").text();
+						
+						/* id가 bookInfo인 div 엘리먼트에 도서정보 표시 */
+						$("#bookInfo").append(
+								"<p>" +title+ "</p>" +
+								"<p>" +writer+ "</p>" +
+								"<img src= "+image+"/>" 
+						)
+					})
+				}
+			})
+		}
+	</script>
+</head>
+<body>
+	<div id="bookInfo"></div>
+	<input type="button" value="도시정보 요청" onclick="fnProcess()" />
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		function gugudan1() {
+			var guguInput = document.getElementById('gugu_input').value;
+			var temp = "";
+			var result = "";			
+			if (guguInput == "") {
+				alert("숫자를 입력하세요.")
+				return false;
+			}
+			for (i = 1; i < 10; i++) {
+				result = guguInput * i;
+				temp += guguInput + "X" + i + "=" + result + "<br/>";
+			}
+			document.getElementById('guguStart').innerHTML = temp;
+		}
+	
+	</script>
+</head>
+<body>
+<form method="post">
+	<div style="border: 1px solid black">
+		원하는 구구단을 입력하고 화면에 출력합니다. <br/>
+		<input type="text" id="gugu_input"/>
+		<input type="button" value="출력" onclick="gugudan1()" />
+	</div>
+	<p id="guguStart"></p>
+</form>
+</body>
+</html>

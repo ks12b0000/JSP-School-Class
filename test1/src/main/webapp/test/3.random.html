@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Insert title here</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		function random(min, max) {
+			var creRandom = Math.floor(Math.random() * (max - min + 1)) + min;
+			return creRandom;
+		}
+		function f_click() {
+		    $('input[name=random3]').attr('value', random(1, 20));
+		}
+	</script>
+</head>
+<body>
+<form method="get">
+	<div style="border: 1px solid black">
+		1~20까지 숫자중 랜덤으로 생성하시오. <br/>
+		출력 : <input type="text" name="random3" value="" readonly  />
+		<input type="button" value="생성" onclick="f_click()" />
+	</div>
+</form>
+</body>
+</html>

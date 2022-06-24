@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		function SignUpForm(form) {
+			if(form.HJid.value == "") {
+				alert("ID를 입력하세요.")
+				form.HJid.focus()
+				return false;
+			}
+			
+			if(form.pass.value == "") {
+				alert("비밀번호를 입력하세요.")
+				form.pass.focus()
+				return false;
+			}
+			
+			if(form.pass_check.value == "") {
+				alert("비밀번호를 입력하세요.")
+				form.pass_check.focus()
+				return false;
+			}
+			
+			if(form.HJname.value == "") {
+				alert("이름을 입력하세요.")
+				form.HJname.focus()
+				return false;
+			}
+			
+			if(form.btday.value == "") {
+				alert("생년월일을 입력하세요.")
+				form.btday.focus()
+				return false;
+			}
+			if(form.gender.value == "") {
+				alert("성별을 체크해주세요.")
+				form.btday.focus()
+				return false;
+			}
+			if(form.user_email.value == "") {
+				alert("이메일을 입력하세요.")
+				form.user_email.focus()
+				return false;
+			}
+			if(form.user_address.value == "") {
+				alert("주소를 입력하세요.")
+				form.user_address.focus()
+				return false;
+			}
+			if(form.user_contact1.value == "") {
+				alert("연락처를 입력하세요.")
+				form.user_contact1.focus()
+				return false;
+			}
+			if(form.user_contact2.value == "") {
+				alert("연락처를 입력하세요.")
+				form.user_contact2.focus()
+				return false;
+			}
+			
+		}
+	</script>
+</head>
+<body>
+	<form action="" method="post" onsubmit="return SignUpForm(this)">
+		<table border="1" width="90%" >
+			<tr>
+				<td>사용자 ID<td>
+				<input type="text" name="HJid" value="" />
+			</tr>	
+			<tr>
+				<td>비밀번호<td>
+				<input type="password" name="pass" value="" />
+			</tr>
+			<tr>
+				<td>비밀번호 확인<td>
+				<input type="text" name="pass_check" value="" />
+			</tr>
+			<tr>
+				<td>사용자 이름<td>
+				<input type="text" name="HJname" value="" />
+			</tr>
+			<tr>
+				<td>*생년월일<td>
+				<input type="text" name="btday" value="" />
+			</tr>
+			<tr>
+				<td>*성별<td>
+				<label>남자 : <input type="radio" name="gender"/></label>
+				<label>여자 : <input type="radio" name="gender"/></label>
+			</tr>
+			<tr>
+				<td>*<strong>사용자 이메일</strong><td>
+				<input type="text" name="user_email" value="" />
+			</tr>
+			<tr>
+				<td>*<strong>사용자 주소</strong><td>
+				<input type="text" name="user_address" value="" />
+			</tr>
+			<tr>
+				<td>*<strong>사용자 연락처1</strong><td>
+				<input type="text" name="user_contact1" value="" />
+			</tr>
+			<tr>
+				<td>*<strong>사용자 연락처2</strong><td>
+				<input type="text" name="user_contact2" value="" />
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<button type="submit">가입 완료</button>
+					<button type="reset">다시 입력</button>
+					<button type="button" onclick="location.href='./1.validation.html'" >가입 안함</button>
+				</td>
+			</tr>
+		</table>	
+	</form>
+</body>
+</html>
